@@ -170,6 +170,7 @@ Example:
 ## Blockquotes
 ___
 To create a new blockquote add this symbol `>` on new line on first column
+
     1. Nested blockquotes
         Add the same symbol twice `>>` to create a nested block
 
