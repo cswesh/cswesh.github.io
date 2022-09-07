@@ -8,14 +8,15 @@ published: true
 
 # Cheat Sheet for Markdown 
 
-### Objective
+## Objective
 ___
 
 
 Article aimed at quick glance for all the code syntax or act as a reference point for Markdown language!
 
 
-### Heading
+## Heading
+___
 \# for Heading 1, ## for Heading 2, .. ###### for Heading 6
 
 \== for Heading 1, -- for Heading 2
@@ -30,7 +31,8 @@ Eample:
 >Heading
 >--
 
-### Paragraph
+## Paragraph
+___
 Blank line added before and after a paragraph 
 \
 \
@@ -45,7 +47,8 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 >
 
-### Text Styling
+## Text Styling
+___
 1. Bold
 Add 2 `**` before and after the word / character
 2. Italics
@@ -53,7 +56,8 @@ Add 1 `*` before and after the word / character
 3. Bold & Italics
 Add 3 `***` before and after the word / character
 
-### New Line
+## New Line
+___
 Add a `\` before and after a paragraph to insert line gap
 \
 \
@@ -72,7 +76,8 @@ line 2
 line 1 without `\`
 line 2 will fall in same line
 
-### Line Breaks
+## Line Breaks
+___
 Creating line breaks before paragraph using `\`
 \
 \
@@ -89,14 +94,16 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 >Output for line break end
 
-### Horizontal rules
+## Horizontal rules
+___
 Add any of these symbol after a empty line `***` or `---` or `___`
 
 >
 >___
 >after ruler
 
-### List
+## List
+___
 There are two types of list
 #### Ordered lists
 Add numbers in any order with a number, a dot and a space `1. `
@@ -130,7 +137,8 @@ Example:
 >+ list item 2
 >* list item 3
 
-### Table
+## Table
+___
 Add a pipe symbol before the start and end `| heading |`
 \
 \
@@ -148,7 +156,8 @@ Example:
 | data row 1  | data row 1 |
 | data row 2  | data row 2 |
 
-### Images
+## Images
+___
 To add images add an `!` follwed by box brackets and image location hyperlink within paranthesis.
 \
 \
@@ -158,7 +167,8 @@ Example:
 ![alt text](image.jpg)
 ```
 
-### Blockquotes
+## Blockquotes
+___
 To create a new blockquote add this symbol `>` on new line on first column
     1. Nested blockquotes
         Add the same symbol twice `>>` to create a nested block
@@ -209,7 +219,8 @@ To create a new blockquote add this symbol `>` on new line on first column
 }
 ```
 
-### Links
+## Links
+___
 Types of links
 
     1. Titles
@@ -267,7 +278,8 @@ Types of links
 
 [![image](https://images.pexels.com/photos/5012119/pexels-photo-5012119.jpeg?auto=compress&cs=tinysrgb&w=200&lazy=load "Images from Pexels.com")](https://www.pexels.com/)
 
-### Additional Syntax
+## Additional Syntax
+___
     1. Footnote
         Adding `^` to the reference link creates the foot note
         
@@ -321,7 +333,8 @@ Types of links
 
 >X<sup>2</sup>
 
-### Escaping characters
+## Escaping characters
+___
 All the above character literals used can be escaped using the `\`
 \
 \    
