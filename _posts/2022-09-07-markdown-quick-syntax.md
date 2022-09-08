@@ -22,7 +22,7 @@ ___
 \== for Heading 1, -- for Heading 2
 \
 \
-Eample:
+Example:
 ```markdown
     Heading
     ==
@@ -36,7 +36,7 @@ ___
 Blank line added before and after a paragraph 
 \
 \
-Eample:
+Example:
 ```markdown
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -158,7 +158,7 @@ Example:
 
 ## Images
 ___
-To add images add an `!` follwed by box brackets and image location hyperlink within paranthesis.
+To add images add an `!` follwed by box brackets and image location hyperlink within parenthesis.
 \
 \
 Example:
@@ -225,7 +225,7 @@ ___
 Types of links
 
     1. Titles
-        Put the text in box brackets immediately followed by url within Paranthesis
+        Put the text in box brackets immediately followed by url within parenthesis
         To add onhover text, add a space and the description within double quotes next to hyperlink url
         
         Example:
@@ -267,9 +267,9 @@ Types of links
 ><author@domain.com>
 
     5. Images
-        As we know adding `!` immediately followed by box brackets with text acting as ALT TEXT and image url within paranthesis
+        As we know adding `!` immediately followed by box brackets with text acting as ALT TEXT and image url within parenthesis
         Optionally description can be added for image onhover
-        This image set in box brackets immediately followed by hyperlink url within paranthesis makes the image hyperlinked
+        This image set in box brackets immediately followed by hyperlink url within parenthesis makes the image hyperlinked
         
         Example:
         
