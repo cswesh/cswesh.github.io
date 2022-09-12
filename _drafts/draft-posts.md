@@ -12,6 +12,7 @@ ___
 
 Article aimed at quick glance for all the commands for Git repository! This cheat sheet will cover only the most needed cmds / quick cmds which will be used day in and out of a programmer.
 
+*\*\*Recommended to use the Git Bash tool to perform all the git actions. Tool can be downloaded from [git-scm](https://git-scm.com/downloads)*
 
 ## Git Config
 ___
@@ -55,6 +56,38 @@ git config --global core.autocrlf input
 ```
 *Without the `--global` flag, all the git configs will be applied to the specific repository only.*
 
-## Git Flow
+## Git Online Repo
 ___
 
+To start with the existing code base from the online repository say GitHub, the repo needs to be pulled to the local base. Following commands will help start the process.
+
+##### 1. Git Fetch
+To fetch or to connect to the repo available online, first the repository needs to be cloned to the local system. Steps to be followed as below: 
+\
+Login to GitHub and goto the repository
+\
+![Git-Clone](/assets/images/gitClone.PNG)
+\
+##### 2. Git Clone
+Using the url obtained as mentioned in previous step, clone the repo using the following cmd.
+```bash 
+git clone https://<giturl>
+```
+
+##### 3. Git file list
+To see the list of files in the directory cloned and to confirm / verify the number the files using the cmd.
+```bash
+ls
+```
+
+##### 4. Git Pull
+On demand if the online repository is been updated by the fellow team and in order to fetch the recent changes in the directory use this cmd.
+```bash
+git pull
+```
+
+##### 5. Git View
+To view the content inside the file 
+```bash
+cat <test.txt>
+```  
