@@ -1,7 +1,7 @@
 ---
-title: Git Commands
+title: Git Basic Commands
 categories: [technical]
-tags: [code,syntax,reference,github,git,git commands,git cmds,cheatsheet]
+tags: [code,syntax,reference,github,git,git commands,git cmds, git basic, git basic cmds,cheatsheet]
 ---
 
 # Cheat Sheet for Git Commands 
@@ -10,7 +10,7 @@ tags: [code,syntax,reference,github,git,git commands,git cmds,cheatsheet]
 ___
 
 
-Article aimed at quick glance for all the commands for Git repository! This cheat sheet will cover only the most needed cmds / quick cmds which will be used day in and out of a programmer.
+Article aimed at quick glance for all the commands for Git repository! This cheat sheet will cover only the most needed cmds / basic cmds which will be used day in and out by a programmer.
 
 *\*\*Recommended to use the Git Bash tool to perform all the git actions. Tool can be downloaded from [git-scm](https://git-scm.com/downloads)*
 
@@ -54,6 +54,11 @@ OS X
 ```bash
 git config --global core.autocrlf input
 ```
+##### 6. Configuring the color mode
+To set the default command line coloring for easy differenciation
+```bash
+git config --global color.ui auto
+```
 *Without the `--global` flag, all the git configs will be applied to the specific repository only.*
 
 ## Git Online Repo
@@ -61,7 +66,7 @@ ___
 
 To start with the existing code base from the online repository say GitHub, the repo needs to be pulled to the local base. Following commands will help start the process.
 
-##### 1. Git Fetch
+##### 1. Git Repo URL
 To fetch or to connect to the repo available online, first the repository needs to be cloned to the local system. Steps to be followed as below: 
 \
 Login to GitHub and goto the repository
@@ -73,21 +78,162 @@ Using the url obtained as mentioned in previous step, clone the repo using the f
 ```bash 
 git clone https://<giturl>
 ```
-
-##### 3. Git file list
+##### 3. Git File List
 To see the list of files in the directory cloned and to confirm / verify the number the files using the cmd.
 ```bash
 ls
 ```
-
 ##### 4. Git Pull
-On demand if the online repository is been updated by the fellow team and in order to fetch the recent changes in the directory use this cmd.
+On demand if the online repository is been updated by the fellow team and in order to fetch the recent changes in the online directory and merge the changes to the local use this cmd.
 ```bash
 git pull
 ```
+>`git pull` is a combination of 
+>
+>   `git fetch` - which only fetches the changes and stores in the refs/remotes/<remote> in .git folder.
+>
+>   `git merge` - updates the changes in the local repository
 
 ##### 5. Git View
 To view the content inside the file 
 ```bash
 cat <test.txt>
 ```  
+## Git Flow
+___
+
+Now we will see how the code flow happens using the git commands. Starting from the scratch how the life cycle begins and how it continues to the online repos.
+
+##### 1. Git Initialize
+Once you created a folder for a new application, the folder needs to be initialized as a git repository. Following cmd will initialize the folder as local git repo.
+```bash
+git init
+```
+\
+*Once initialized, a `.git` folder will be created. In this folder all the changes made to the code files are tracked with version history and the commit history. Also when this folder is synced online repo, all the information related to the repo name, url, branch name, number of branches, last modified version are all captured.*
+##### 2. Git File Addition
+Now the file(s) is created in the git initialized folder as part of the code function, say creating a simple web page with `index.html` and corresponding styles added to page in the  `style.css` file. These files are tracked by the git but not added by default. To add the file to the staging area use the following cmd.
+\
+Add single file
+```bash
+git add index.html
+```
+Add multiple files using
+```bash
+git add .
+```
+or 
+```bash
+git add -all
+```
+##### 3. Git File Status Check
+Before committing the changes, the file will added to the staging area. To show the modified files use
+```bash
+git status
+```
+##### 4. Git File Stage Differences 
+But in time when the number of files increases it will be pretty difficult to track which file is added to staging and which are not. To check the status of the files in the folder will allow us to see the differentiation in not stagged files use
+```bash
+git diff
+```
+To show all the stagged files but not committed use
+```bash
+git diff --staged
+```
+##### 5. Git File Commits
+Once the changes are ready to be uploaded to make it a version, the file or file set can be committed with the commit description by identifying with the flag `-m` for message. The cmd used as follows.
+```bash
+git commit -m "<commit description on the change done>"
+```
+##### 6. Git Remote
+To view the list of remote repos available / configured with url, use the following cmd
+```bash
+git remote -v
+```
+\
+To add a new remote location, add a name for the remote location which will used in future references and map the url
+```bash
+git remote add <name> <URL>
+```
+To rename and remove the remote location added, use the following cmd
+```bash
+git remote rename <oldName> <newName>
+git remote remove <name>
+```
+##### 7. Git Publish
+To publish the committed version of the files to online repository, use the following cmd. While pushing the files from local to remote online provide the `remote name` and `remote branch`. Also if upstream (tracking) reference to be added, include the flag `-u` in the cmd as follows. 
+```bash
+git push <origin> <main>
+git push -u <origin> <main>
+```
+To delete a branch in the online repository use
+```bash
+git push <name> --delete <branchName>
+```
+## Additionally
+___
+Apart from the flow, few additional commands that are useful
+##### 1. Branching
+To list all the branches available use 
+```bash
+git branch
+```
+*\* denotes the branch which is connected presently*
+\
+To create a new branch
+```bash
+git branch <branchName>
+```
+To rename the branch
+```bash
+git branch -m <oldName> <newName>
+```
+To delete a branch in the local repository use the flag `-d` and to delete forcefully use `-D`
+```bash
+git branch -d <branchName>
+```
+In order to change the connected branch to a new branch use
+```bash
+git checkout <newBranchName>
+```
+To create a new branch and switch the newly created branch use
+```bash
+git checkout -b <branchName>
+```
+To show the commit history in current branch
+```bash
+git log
+```
+To show the difference available in branchOld and not in branchNew
+```bash
+git diff branchNew...branchOld
+```
+##### 2. Misc.
+To delete the file from the folder and stage the removal changes use 
+```bash
+git rm <filename>
+```
+To move the existing file path to a new path and stage the changes use
+```bash
+git mv <existingPath> <newPath>
+```
+To apply the commits of the current branch ahead of any others use
+```bash
+git rebase <commit>
+```
+To clear the stagging area and start working from the tree of the specified commit id use
+```bash
+git reset --hard <commit>
+```
+If you are juggling between branches and wanted to save all the modified files temporarily in the stagged area use
+```bash
+git stash
+```
+To discard all the temporary changes stagged use
+```bash
+git stash drop
+```
+To move a commit from one branch to another
+```bash
+git cherry-pick <commit>
+```
