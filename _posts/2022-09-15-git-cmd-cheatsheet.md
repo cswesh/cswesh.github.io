@@ -1,23 +1,22 @@
 ---
 title: Git Basic Commands
+date: 2022-09-15 12:00:00 +0530
 categories: [technical]
 tags: [code,syntax,reference,github,git,git commands,git cmds, git basic, git basic cmds,cheatsheet]
 comments: true
+published: false
 ---
-
-# Cheat Sheet for Git Commands 
 
 ## Objective
 ___
 
 
-Article aimed at quick glance for all the commands for Git repository! This cheat sheet will cover only the most needed cmds / basic cmds which will be used day in and out by a programmer.
+Article aimed at quick glance for all the basic commands for Git Repository!
 
 *\*\*Recommended to use the Git Bash tool to perform all the git actions. Tool can be downloaded from [git-scm](https://git-scm.com/downloads)*
 
 ## Git Config
 ___
-
 
 To setup the git environment in the local for the first time helps faster access to the distributed repository(s) at a system level. 
 

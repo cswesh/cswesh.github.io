@@ -48,9 +48,9 @@ social:
     - https://github.com/cswesh       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://www.linkedin.com/in/cswesh
 
-google_site_verification:               # fill in to your verification string
+google_site_verification:  googlee242cc6cc2f291b4.html             # fill in to your verification string
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
@@ -89,7 +89,7 @@ avatar: 'https://avatars.githubusercontent.com/u/3072845?v=4'
 toc: true
 
 comments:
-  active:         # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  active: true    # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
     shortname:    # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
