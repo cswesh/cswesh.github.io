@@ -4,7 +4,7 @@ date: 2022-09-15 12:00:00 +0530
 categories: [technical]
 tags: [code,syntax,reference,github,git,git commands,git cmds, git basic, git basic cmds,cheatsheet]
 comments: true
-published: false
+published: true
 ---
 
 ## Objective
