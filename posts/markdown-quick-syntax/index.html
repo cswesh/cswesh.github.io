@@ -1,0 +1,265 @@
+<!DOCTYPE html><html lang="en" ><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="generator" content="Jekyll v4.2.2" /><meta property="og:title" content="Markdown Quick Syntax" /><meta property="og:locale" content="en" /><meta name="description" content="Cheat Sheet for Markdown" /><meta property="og:description" content="Cheat Sheet for Markdown" /><link rel="canonical" href="https://cswesh.github.io/posts/markdown-quick-syntax/" /><meta property="og:url" content="https://cswesh.github.io/posts/markdown-quick-syntax/" /><meta property="og:site_name" content="Swesh’s Site" /><meta property="og:type" content="article" /><meta property="article:published_time" content="2022-09-07T12:00:00+05:30" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="Markdown Quick Syntax" /><meta name="twitter:site" content="@cswesh" /><meta name="google-site-verification" content="B5frgvlRvzr-POVFpau43QhvWlsQzwvRX8-vqITNB9s" /> <script type="application/ld+json"> {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-14T19:27:43+05:30","datePublished":"2022-09-07T12:00:00+05:30","description":"Cheat Sheet for Markdown","headline":"Markdown Quick Syntax","mainEntityOfPage":{"@type":"WebPage","@id":"https://cswesh.github.io/posts/markdown-quick-syntax/"},"url":"https://cswesh.github.io/posts/markdown-quick-syntax/"}</script><title>Markdown Quick Syntax | Swesh's Site</title><link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png"><link rel="manifest" href="/assets/img/favicons/site.webmanifest"><link rel="shortcut icon" href="/assets/img/favicons/favicon.ico"><meta name="apple-mobile-web-app-title" content="Swesh's Site"><meta name="application-name" content="Swesh's Site"><meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml"><meta name="theme-color" content="#ffffff"><link rel="preconnect" href="https://fonts.googleapis.com" ><link rel="dns-prefetch" href="https://fonts.googleapis.com" ><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com" ><link rel="dns-prefetch" href="https://fonts.googleapis.com" ><link rel="preconnect" href="https://cdn.jsdelivr.net" ><link rel="dns-prefetch" href="https://cdn.jsdelivr.net" ><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&display=swap"><link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials"><link rel="dns-prefetch" href="https://www.google-analytics.com"><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"><link rel="stylesheet" href="/assets/css/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1/dist/magnific-popup.min.css"> <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> <script type="text/javascript"> class ModeToggle { static get MODE_KEY() { return "mode"; } static get MODE_ATTR() { return "data-mode"; } static get DARK_MODE() { return "dark"; } static get LIGHT_MODE() { return "light"; } static get ID() { return "mode-toggle"; } constructor() { if (this.hasMode) { if (this.isDarkMode) { if (!this.isSysDarkPrefer) { this.setDark(); } } else { if (this.isSysDarkPrefer) { this.setLight(); } } } let self = this; /* always follow the system prefers */ this.sysDarkPrefers.addEventListener("change", () => { if (self.hasMode) { if (self.isDarkMode) { if (!self.isSysDarkPrefer) { self.setDark(); } } else { if (self.isSysDarkPrefer) { self.setLight(); } } self.clearMode(); } self.notify(); }); } /* constructor() */ get sysDarkPrefers() { return window.matchMedia("(prefers-color-scheme: dark)"); } get isSysDarkPrefer() { return this.sysDarkPrefers.matches; } get isDarkMode() { return this.mode === ModeToggle.DARK_MODE; } get isLightMode() { return this.mode === ModeToggle.LIGHT_MODE; } get hasMode() { return this.mode != null; } get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); } /* get the current mode on screen */ get modeStatus() { if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) { return ModeToggle.DARK_MODE; } else { return ModeToggle.LIGHT_MODE; } } setDark() { $('html').attr(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); } setLight() { $('html').attr(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); } clearMode() { $('html').removeAttr(ModeToggle.MODE_ATTR); sessionStorage.removeItem(ModeToggle.MODE_KEY); } /* Notify another plugins that the theme mode has changed */ notify() { window.postMessage({ direction: ModeToggle.ID, message: this.modeStatus }, "*"); } } /* ModeToggle */ const toggle = new ModeToggle(); function flipMode() { if (toggle.hasMode) { if (toggle.isSysDarkPrefer) { if (toggle.isLightMode) { toggle.clearMode(); } else { toggle.setLight(); } } else { if (toggle.isDarkMode) { toggle.clearMode(); } else { toggle.setDark(); } } } else { if (toggle.isSysDarkPrefer) { toggle.setLight(); } else { toggle.setDark(); } } toggle.notify(); } /* flipMode() */ </script><body data-spy="scroll" data-target="#toc" data-topbar-visible="true"><div id="sidebar" class="d-flex flex-column align-items-end"><div class="profile-wrapper text-center"><div id="avatar"> <a href="/" class="mx-auto"> <img src="https://avatars.githubusercontent.com/u/3072845?v=4" alt="avatar" onerror="this.style.display='none'"> </a></div><div class="site-title mt-3"> <a href="/">Swesh's Site</a></div><div class="site-subtitle font-italic">A doc site</div></div><ul class="w-100"><li class="nav-item"> <a href="/" class="nav-link"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>HOME</span> </a><li class="nav-item"> <a href="/categories/" class="nav-link"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>CATEGORIES</span> </a><li class="nav-item"> <a href="/tags/" class="nav-link"> <i class="fa-fw fas fa-tag ml-xl-3 mr-xl-3 unloaded"></i> <span>TAGS</span> </a><li class="nav-item"> <a href="/archives/" class="nav-link"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>ARCHIVES</span> </a><li class="nav-item"> <a href="/about/" class="nav-link"> <i class="fa-fw fas fa-info-circle ml-xl-3 mr-xl-3 unloaded"></i> <span>ABOUT</span> </a></ul><div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center"> <button class="mode-toggle btn" aria-label="Switch Mode"> <i class="fas fa-adjust"></i> </button> <span class="icon-border"></span> <a href="https://github.com/cswesh" aria-label="github" target="_blank" rel="noopener"> <i class="fab fa-github"></i> </a> <a href="https://twitter.com/cswesh" aria-label="twitter" target="_blank" rel="noopener"> <i class="fab fa-twitter"></i> </a> <a href=" javascript:location.href = 'mailto:' + ['example','doamin.com'].join('@')" aria-label="email" > <i class="fas fa-envelope"></i> </a> <a href="/feed.xml" aria-label="rss" > <i class="fas fa-rss"></i> </a></div></div><div id="topbar-wrapper"><div id="topbar" class="container d-flex align-items-center justify-content-between h-100 pl-3 pr-3 pl-md-4 pr-md-4"> <span id="breadcrumb"> <span> <a href="/"> Home </a> </span> <span>Markdown Quick Syntax</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i><div id="topbar-title"> Post</div><i id="search-trigger" class="fas fa-search fa-fw"></i> <span id="search-wrapper" class="align-items-center"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off" placeholder="Search..."> </span> <span id="search-cancel" >Cancel</span></div></div><div id="main-wrapper" class="d-flex justify-content-center"><div id="main" class="container pl-xl-4 pr-xl-4"><div class="row"><div id="core-wrapper" class="col-12 col-lg-11 col-xl-9 pr-xl-4"><div class="post pl-1 pr-1 pl-md-2 pr-md-2"><h1 data-toc-skip>Markdown Quick Syntax</h1><div class="post-meta text-muted"> <span> Posted <em class="" data-ts="1662532200" data-df="ll" data-toggle="tooltip" data-placement="bottom"> Sep 7, 2022 </em> </span> <span> Updated <em class="" data-ts="1663163863" data-df="ll" data-toggle="tooltip" data-placement="bottom"> Sep 14, 2022 </em> </span><div class="d-flex justify-content-between"> <span> By <em> <a href="https://twitter.com/cswesh">Swesh</a> </em> </span><div> <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="1065 words"> <em>5 min</em> read</span></div></div></div><div class="post-content"><h1 id="cheat-sheet-for-markdown">Cheat Sheet for Markdown</h1><h2 id="objective"><span class="mr-2">Objective</span><a href="#objective" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><hr /><p>Article aimed at quick glance for all the code syntax or act as a reference point for Markdown language!</p><h2 id="heading"><span class="mr-2">Heading</span><a href="#heading" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><hr /><p># for Heading 1, ## for Heading 2, .. ###### for Heading 6</p><p>== for Heading 1, – for Heading 2 <br /> <br /> Example:</p><div class="language-markdown highlighter-rouge"><div class="code-header"> <span data-label-text="Markdown"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre>    Heading
+    ==
+</pre></table></code></div></div><blockquote><h2 id="heading-1"><span class="mr-2">Heading</span><a href="#heading-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2></blockquote><h2 id="paragraph"><span class="mr-2">Paragraph</span><a href="#paragraph" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><hr /><p>Blank line added before and after a paragraph <br /> <br /> Example:</p><div class="language-markdown highlighter-rouge"><div class="code-header"> <span data-label-text="Markdown"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+</pre></table></code></div></div><blockquote><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></blockquote><h2 id="text-styling"><span class="mr-2">Text Styling</span><a href="#text-styling" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><hr /><ol><li>Bold Add 2 <code class="language-plaintext highlighter-rouge">**</code> before and after the word / character<li>Italics Add 1 <code class="language-plaintext highlighter-rouge">*</code> before and after the word / character<li>Bold &amp; Italics Add 3 <code class="language-plaintext highlighter-rouge">***</code> before and after the word / character</ol><h2 id="new-line"><span class="mr-2">New Line</span><a href="#new-line" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><hr /><p>Add a <code class="language-plaintext highlighter-rouge">\</code> before and after a paragraph to insert line gap <br /> <br /> Example:</p><div class="language-markdown highlighter-rouge"><div class="code-header"> <span data-label-text="Markdown"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre>line 1 with <span class="err">\</span>
+<span class="err">\</span>
+line 2
+</pre></table></code></div></div><p>line 1 with <code class="language-plaintext highlighter-rouge">\</code> <br /> line 2 <br /> line 1 without <code class="language-plaintext highlighter-rouge">\</code> line 2 will fall in same line</p><h2 id="line-breaks"><span class="mr-2">Line Breaks</span><a href="#line-breaks" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><hr /><p>Creating line breaks before paragraph using <code class="language-plaintext highlighter-rouge">\</code> <br /> <br /> Example:</p><div class="language-markdown highlighter-rouge"><div class="code-header"> <span data-label-text="Markdown"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre><span class="err">\</span>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+</pre></table></code></div></div><blockquote><p>Output for line break start</p></blockquote><p><br /> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p><blockquote><p>Output for line break end</p></blockquote><h2 id="horizontal-rules"><span class="mr-2">Horizontal rules</span><a href="#horizontal-rules" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><hr /><p>Add any of these symbol after a empty line <code class="language-plaintext highlighter-rouge">***</code> or <code class="language-plaintext highlighter-rouge">---</code> or <code class="language-plaintext highlighter-rouge">___</code></p><blockquote><hr /><p>after ruler</p></blockquote><h2 id="list"><span class="mr-2">List</span><a href="#list" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><hr /><p>There are two types of list</p><h4 id="ordered-lists"><span class="mr-2">Ordered lists</span><a href="#ordered-lists" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4><p>Add numbers in any order with a number, a dot and a space <code class="language-plaintext highlighter-rouge">1. </code> <br /> <br /> Example:</p><div class="language-markdown highlighter-rouge"><div class="code-header"> <span data-label-text="Markdown"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre><span class="p">1.</span> item one
+<span class="p">1.</span> item two
+</pre></table></code></div></div><blockquote><ol><li>list one<li>list two</ol></blockquote><h4 id="unordered-lists"><span class="mr-2">Unordered lists</span><a href="#unordered-lists" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4><p>Add any of the following symbol <code class="language-plaintext highlighter-rouge">-</code> or <code class="language-plaintext highlighter-rouge">+</code> or <code class="language-plaintext highlighter-rouge">*</code> <br /> <br /> Example:</p><div class="language-markdown highlighter-rouge"><div class="code-header"> <span data-label-text="Markdown"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre><span class="p">-</span> list item 1
+<span class="p">    -</span> sub list item 1
+<span class="p">+</span> list item 2
+<span class="p">*</span> list item 3
+</pre></table></code></div></div><blockquote><ul><li>list item 1<ul><li>sub list item 1</ul><li>list item 2<li>list item 3</ul></blockquote><h2 id="table"><span class="mr-2">Table</span><a href="#table" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><hr /><p>Add a pipe symbol before the start and end <code class="language-plaintext highlighter-rouge">| heading |</code> <br /> <br /> Example:</p><div class="language-markdown highlighter-rouge"><div class="code-header"> <span data-label-text="Markdown"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre>    | Header 1    | Header 2 |
+    | ----------- | ---------- |
+    | data row 1  | data row 1 |
+    | data row 2  | data row 2 |
+</pre></table></code></div></div><div class="table-wrapper"><table><thead><tr><th>Header 1<th>Header 2<tbody><tr><td>data row 1<td>data row 1<tr><td>data row 2<td>data row 2</table></div><h2 id="images"><span class="mr-2">Images</span><a href="#images" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><hr /><p>To add images add an <code class="language-plaintext highlighter-rouge">!</code> follwed by box brackets and image location hyperlink within parenthesis. <br /> <br /> Example:</p><div class="language-markdown highlighter-rouge"><div class="code-header"> <span data-label-text="Markdown"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre><span class="p">![</span><span class="nv">alt text</span><span class="p">](</span><span class="sx">image.jpg</span><span class="p">)</span>
+</pre></table></code></div></div><h2 id="blockquotes"><span class="mr-2">Blockquotes</span><a href="#blockquotes" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><hr /><p>To create a new blockquote add this symbol <code class="language-plaintext highlighter-rouge">&gt;</code> on new line on first column</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre>1. Nested blockquotes
+    Add the same symbol twice `&gt;&gt;` to create a nested block
+</pre></table></code></div></div><blockquote><p>blocked quote</p><blockquote><p>nested blockquote</p></blockquote></blockquote><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre>2. Code blocks
+    An indent with 4 spaces or 1 tab creates a code block
+</pre></table></code></div></div><blockquote><p>tab / indented</p></blockquote><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre><td class="rouge-code"><pre>3. Fenced Code blocks
+    Adding 3 ``` (backticks) or 3 `~~~` will create a fenced code blocks
+    
+    Example:
+    
+    ```
+    {
+        "firstname":"John",
+        "lastname":"Doe"
+    }
+    ```
+</pre></table></code></div></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre>{
+    "firstname":"John",
+    "lastname":"Doe"
+}
+</pre></table></code></div></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre><td class="rouge-code"><pre>4. Formating Code block languages
+    Adding 3 ``` with language name will create a language formating
+    
+    Example:
+    
+    ```json
+    {
+        "firstname":"John",
+        "lastname":"Doe"
+    }
+    ```
+</pre></table></code></div></div><div class="language-json highlighter-rouge"><div class="code-header"> <span data-label-text="JSON"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre><span class="p">{</span><span class="w">
+    </span><span class="nl">"firstname"</span><span class="p">:</span><span class="s2">"John"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"lastname"</span><span class="p">:</span><span class="s2">"Doe"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></pre></table></code></div></div><h2 id="links"><span class="mr-2">Links</span><a href="#links" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><hr /><p>Types of links</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre>1. Titles
+    Put the text in box brackets immediately followed by url within parenthesis
+    To add onhover text, add a space and the description within double quotes next to hyperlink url
+    
+    Example:
+     
+    [Google](https://www.google.com)
+    [Google](https://www.google.com "search engine for all needs")
+</pre></table></code></div></div><blockquote><p><a href="https://www.google.com" title="search engine for all needs">Google</a></p></blockquote><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre><td class="rouge-code"><pre>2. URL
+    To display URL add the hyperlink within the arrow brackets 
+    
+    Example:
+    
+    &lt;https://www.google.com&gt;
+</pre></table></code></div></div><blockquote><p><a href="https://www.google.com">https://www.google.com</a></p></blockquote><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre>3. Reference
+    To create reference links for any text or paragraph, add numbers within box brackets and after a line gap create hyperlink url reference to the numbers added above.
+    
+    Example:
+    
+    [Google Wiki][1]
+
+    [1]: https://en.wikipedia.org/wiki/Google
+</pre></table></code></div></div><blockquote><p><a href="https://en.wikipedia.org/wiki/Google" title="Wikipedia">Google-Wiki</a></p></blockquote><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre><td class="rouge-code"><pre>4. Email
+    To create a mailto hyperlink, add the email within arrow brackets
+    
+    Example:
+    
+    &lt;author@domain.com&gt;
+</pre></table></code></div></div><blockquote><p><a href="mailto:author@domain.com">author@domain.com</a></p></blockquote><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre><td class="rouge-code"><pre>5. Images
+    As we know adding `!` immediately followed by box brackets with text acting as ALT TEXT and image url within parenthesis
+    Optionally description can be added for image onhover
+    This image set in box brackets immediately followed by hyperlink url within parenthesis makes the image hyperlinked
+    
+    Example:
+    
+    ![alt-text](image.jpeg)
+    ![alt-text](image.jpeg "image description")
+    [![alt-text](image.jpeg "image description")](https://www.google.com)
+</pre></table></code></div></div><p><a href="https://www.pexels.com/"><img data-src="https://images.pexels.com/photos/5012119/pexels-photo-5012119.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200&amp;lazy=load" alt="image" title="Images from Pexels.com" data-proofer-ignore></a></p><h2 id="additional-syntax"><span class="mr-2">Additional Syntax</span><a href="#additional-syntax" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><hr /><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre>1. Footnote
+    Adding `^` to the reference link creates the foot note
+    
+    Example:
+    
+    Sample footnote created.[^1]
+
+    [^1]: This is the footnote 
+</pre></table></code></div></div><blockquote><p>Sample footnote created.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p></blockquote><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre><td class="rouge-code"><pre>2. Strikethrough
+    Adding 2 ~~ will create a strikethrough
+    
+    Example:
+    
+    This will ~~strikethrough~~ the word inbetween
+</pre></table></code></div></div><blockquote><p>This will <del>strikethrough</del> the word inbetween</p></blockquote><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre><td class="rouge-code"><pre>3. Highlight
+    To highlight a word or sentence, double equal `==` between the word or if application supports then add html supported tag &lt;mark&gt;
+    
+    Example:
+    
+    In this line, this word ==highlight== will be highlighted.
+    In this line, this word &lt;mark&gt;highlight&lt;/mark&gt; will be highlighted.
+</pre></table></code></div></div><blockquote><p>In this line, this word <mark>highlight</mark> will be highlighted.</p></blockquote><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre><td class="rouge-code"><pre>4. Subscript
+    To create subscript, Single tilde `~` between the word or if application supports then add the tag &lt;sub&gt; between the word
+    
+    Example:
+    
+    H~2~O
+    H&lt;sub&gt;2&lt;/sub&gt;O
+</pre></table></code></div></div><blockquote><p>H<sub>2</sub>O</p></blockquote><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre><td class="rouge-code"><pre>5. Superscript
+    Single backtick `^` between the word or if application supports then add the html supported tag &lt;sup&gt; 
+    
+    Example:
+    
+    X^2^
+    X&lt;sup&gt;2&lt;/sup&gt;
+</pre></table></code></div></div><blockquote><p>X<sup>2</sup></p></blockquote><h2 id="escaping-characters"><span class="mr-2">Escaping characters</span><a href="#escaping-characters" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2><hr /><p>All the above character literals used can be escaped using the <code class="language-plaintext highlighter-rouge">\</code> <br /> \ <br /> Example:</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>* Conditions Apply 
+</pre></table></code></div></div><p>but output renders as bullet point</p><blockquote><ul><li>Conditions Apply</ul></blockquote><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>to this escape this, add the backslash 
+</pre></table></code></div></div><blockquote><p>* Conditions Apply</p></blockquote><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre>Different characters that can be escaped are
+\ ` * _ { } [ ] &lt; &gt; ( ) # + - . ! |
+</pre></table></code></div></div><div class="footnotes" role="doc-endnotes"><ol><li id="fn:1" role="doc-endnote"><p>This is the footnote <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p></ol></div></div><div class="post-tail-wrapper text-muted"><div class="post-meta mb-3"> <i class="far fa-folder-open fa-fw mr-1"></i> <a href='/categories/technical/'>technical</a></div><div class="post-tags"> <i class="fa fa-tags fa-fw mr-1"></i> <a href="/tags/code/" class="post-tag no-text-decoration" >code</a> <a href="/tags/syntax/" class="post-tag no-text-decoration" >syntax</a> <a href="/tags/reference/" class="post-tag no-text-decoration" >reference</a> <a href="/tags/markdown/" class="post-tag no-text-decoration" >markdown</a> <a href="/tags/cheatsheet/" class="post-tag no-text-decoration" >cheatsheet</a></div><div class="post-tail-bottom d-flex justify-content-between align-items-center mt-3 pt-5 pb-2"><div class="license-wrapper"> This post is licensed under <a href="https://creativecommons.org/licenses/by/4.0/"> CC BY 4.0 </a> by the author.</div><div class="share-wrapper"> <span class="share-label text-muted mr-1">Share</span> <span class="share-icons"> <a href="https://twitter.com/intent/tweet?text=Markdown+Quick+Syntax+-+Swesh%27s+Site&url=https%3A%2F%2Fcswesh.github.io%2Fposts%2Fmarkdown-quick-syntax%2F" data-toggle="tooltip" data-placement="top" title="Twitter" target="_blank" rel="noopener" aria-label="Twitter"> <i class="fa-fw fab fa-twitter"></i> </a> <a href="https://www.facebook.com/sharer/sharer.php?title=Markdown+Quick+Syntax+-+Swesh%27s+Site&u=https%3A%2F%2Fcswesh.github.io%2Fposts%2Fmarkdown-quick-syntax%2F" data-toggle="tooltip" data-placement="top" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook"> <i class="fa-fw fab fa-facebook-square"></i> </a> <a href="https://t.me/share/url?url=https%3A%2F%2Fcswesh.github.io%2Fposts%2Fmarkdown-quick-syntax%2F&text=Markdown+Quick+Syntax+-+Swesh%27s+Site" data-toggle="tooltip" data-placement="top" title="Telegram" target="_blank" rel="noopener" aria-label="Telegram"> <i class="fa-fw fab fa-telegram"></i> </a> <i id="copy-link" class="fa-fw fas fa-link small" data-toggle="tooltip" data-placement="top" title="Copy link" data-title-succeed="Link copied successfully!"> </i> </span></div></div></div></div></div><div id="panel-wrapper" class="col-xl-3 pl-2 text-muted"><div class="access"><div id="access-lastmod" class="post"><div class="panel-heading">Recently Updated</div><ul class="post-content pl-0 pb-1 ml-1 mt-2"><li><a href="/posts/git-cmd-cheatsheet/">Git Basic Commands</a><li><a href="/posts/markdown-quick-syntax/">Markdown Quick Syntax</a></ul></div><div id="access-tags"><div class="panel-heading">Trending Tags</div><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/cheatsheet/">cheatsheet</a> <a class="post-tag" href="/tags/code/">code</a> <a class="post-tag" href="/tags/reference/">reference</a> <a class="post-tag" href="/tags/syntax/">syntax</a> <a class="post-tag" href="/tags/cms/">cms</a> <a class="post-tag" href="/tags/git-basic-cmds/">git basic cmds</a> <a class="post-tag" href="/tags/git-basic/">git basic</a> <a class="post-tag" href="/tags/git-cmds/">git cmds</a> <a class="post-tag" href="/tags/git-commands/">git commands</a> <a class="post-tag" href="/tags/git/">git</a></div></div></div><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script><div id="toc-wrapper" class="pl-0 pr-4 mb-5"><div class="panel-heading pl-3 pt-2 mb-2">Contents</div><nav id="toc" data-toggle="toc"></nav></div></div></div><div class="row"><div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 pl-3 pr-3 pr-xl-4"><div id="related-posts" class="mt-5 mb-2 mb-sm-4"><h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Further Reading</h3><div class="card-deck mb-4"><div class="card"> <a href="/posts/git-cmd-cheatsheet/"><div class="card-body"> <em class="small" data-ts="1663223400" data-df="ll" > Sep 15, 2022 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Git Basic Commands</h3><div class="text-muted small"><p> Objective Article aimed at quick glance for all the basic commands for Git Repository! **Recommended to use the Git Bash tool to perform all the git actions. Tool can be downloaded from git-scm ...</p></div></div></a></div><div class="card"> <a href="/posts/hello-world/"><div class="card-body"> <em class="small" data-ts="1659681000" data-df="ll" > Aug 5, 2022 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Hello World</h3><div class="text-muted small"><p> Welcome Hello world, welcome to my new website! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1...</p></div></div></a></div></div></div><div class="post-navigation d-flex justify-content-between"> <a href="/posts/hello-world/" class="btn btn-outline-primary" prompt="Older"><p>Hello World</p></a> <a href="/posts/git-cmd-cheatsheet/" class="btn btn-outline-primary" prompt="Newer"><p>Git Basic Commands</p></a></div></div></div><footer class="row pl-3 pr-3"><div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0"><div class="footer-left"><p class="mb-0"> © 2022 <a href="https://twitter.com/cswesh">Swesh</a>. <span data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">Some rights reserved.</span></p></div><div class="footer-right"><p class="mb-0"> Powered by Open Source CMS.</p></div></div></footer></div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-12 col-sm-11 post-content"><div id="search-hints"><div id="access-tags"><div class="panel-heading">Trending Tags</div><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/cheatsheet/">cheatsheet</a> <a class="post-tag" href="/tags/code/">code</a> <a class="post-tag" href="/tags/reference/">reference</a> <a class="post-tag" href="/tags/syntax/">syntax</a> <a class="post-tag" href="/tags/cms/">cms</a> <a class="post-tag" href="/tags/git-basic-cmds/">git basic cmds</a> <a class="post-tag" href="/tags/git-basic/">git basic</a> <a class="post-tag" href="/tags/git-cmds/">git cmds</a> <a class="post-tag" href="/tags/git-commands/">git commands</a> <a class="post-tag" href="/tags/git/">git</a></div></div></div><div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div></div></div></div><div id="mask"></div><a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"> <i class="fas fa-angle-up"></i> </a><div id="notification" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-animation="true" data-autohide="false"><div class="toast-header"> <button type="button" class="ml-2 ml-auto close" data-dismiss="toast" aria-label="Close"> <span aria-hidden="true">&times;</span> </button></div><div class="toast-body text-center pt-0"><p class="pl-2 pr-2 mb-3">A new version of content is available.</p><button type="button" class="btn btn-primary" aria-label="Update"> Update </button></div></div><script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/assets/js/data/search.json', searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"> <a href="{url}">{title}</a><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"> {categories} {tags}</div><p>{snippet}</p></div>', noResultsText: '<p class="mt-5">Oops! No results found.</p>', templateMiddleware: function(prop, value, template) { if (prop === 'categories') { if (value === '') { return `${value}`; } else { return `<div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`; } } if (prop === 'tags') { if (value === '') { return `${value}`; } else { return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`; } } } }); </script> <script src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script> <script src="https://cdn.jsdelivr.net/combine/npm/dayjs@1/dayjs.min.js,npm/dayjs@1/locale/en.min.js,npm/dayjs@1/plugin/relativeTime.min.js,npm/dayjs@1/plugin/localizedFormat.min.js"></script> <script defer src="/assets/js/dist/post.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script> <script defer src="/app.js"></script> <script defer src="https://www.googletagmanager.com/gtag/js?id=G-Z59V9EJZG8"></script> <script> document.addEventListener("DOMContentLoaded", function(event) { window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-Z59V9EJZG8'); }); </script>
