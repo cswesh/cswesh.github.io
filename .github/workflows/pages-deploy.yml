@@ -24,6 +24,7 @@ jobs:
         with:
           bundler: "Gemfile.lock"
           bundler-cache: true
+          ruby-version: default
 
       - name: Deploy
         run: bash tools/deploy.sh
