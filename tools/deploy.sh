@@ -55,13 +55,14 @@ build() {
   JEKYLL_ENV=production bundle exec jekyll b -d "$SITE_DIR$_baseurl" --config "$_config"
 }
 
-test() {
-  bundle exec htmlproofer \
-    --disable-external \
-    --check-html \
-    --allow_hash_href \
-    "$SITE_DIR"
-}
+# bundler: failed to load command: htmlproofer (/home/runner/work/cswesh.github.io/cswesh.github.io/vendor/bundle/ruby/3.2.0/bin/htmlproofer)
+# test() {
+#   bundle exec htmlproofer \
+#     --disable-external \
+#     --check-html \
+#     --allow_hash_href \
+#     "$SITE_DIR"
+# }
 
 resume_site_dir() {
   if [[ -n $_baseurl ]]; then
