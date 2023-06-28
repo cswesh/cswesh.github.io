@@ -20,6 +20,6 @@ end
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
 # Jekyll <= 4.2.0 compatibility with Ruby 3.0
-gem "webrick", "~> 1.7"
+gem 'webrick', '~> 1.8', '>= 1.8.1'
 gem 'jekyll-seo-tag', '~> 2.8'
 gem 'sass-embedded', '~> 1.63', '>= 1.63.4'
