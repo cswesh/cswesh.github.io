@@ -92,7 +92,8 @@ comments:
   active: 'disqus'     # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
-    shortname:  'disqus_8JTswwAmdt'  # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+    shortname:  'cswesh-ghpages'  # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  #disqus_8JTswwAmdt
   # utterances settings › https://utteranc.es/
   utterances:
     repo:         # <gh-username>/<repo>
