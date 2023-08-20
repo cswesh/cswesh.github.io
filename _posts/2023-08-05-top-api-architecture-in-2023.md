@@ -2,7 +2,7 @@
 title: TOP API Architectures in 2023
 date: 2023-08-05 12:00:00 +0530
 categories: [technical]
-tags: [API,Architecture,API Architecture, 2023 Top API Architecture, API methodologies, REST, Webhooks, Graphql, SOAP, Websocket, gRPC, MQTT, AMQP]
+tags: [API,Architecture,API Architecture, 2023 Top API Architecture, API methodologies, REST, Webhooks, Graphql, SOAP, Websocket, gRPC, MQTT, AMQP, what are API Architectures, API Styles, different types of api architectures, quick revision of apis, interview preperations]
 published: true
 ---
 
