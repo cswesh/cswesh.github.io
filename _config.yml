@@ -50,7 +50,8 @@ social:
     # - https://www.facebook.com/username
     - https://www.linkedin.com/in/cswesh
 
-google_site_verification:  B5frgvlRvzr-POVFpau43QhvWlsQzwvRX8-vqITNB9s             # fill in to your verification string
+google-site-verification: umhyRQ5wYlbT0znDRy_YDDFK0HlYtdLFl9_OD78KyvA
+# google_site_verification:  B5frgvlRvzr-POVFpau43QhvWlsQzwvRX8-vqITNB9s             # fill in to your verification string
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
