@@ -35,11 +35,11 @@ RPC APIs allow programs to execute functions or procedures on a remote server as
 
 ## 7. MQTT (Message Queing Telemetry Transport)
 
-MQTT (Message Queuing Telemetry Transport) is a lightweight publish-subscribe messaging protocol designed for efficient communication between devices and systems, particularly in scenarios with low bandwidth, high latency, or unreliable networks. While MQTT is not a traditional API architecture style, it is often used as a communication protocol in various IoT (Internet of Things) and real-time messaging architectures. [Read More...](#heres-how-mqtt-works-within-an-api-architecture)
+MQTT (Message Queuing Telemetry Transport) is a lightweight publish-subscribe messaging protocol designed for efficient communication between devices and systems, particularly in scenarios with low bandwidth, high latency, or unreliable networks. While MQTT is not a traditional API architecture style, it is often used as a communication protocol in various IoT (Internet of Things) and real-time messaging architectures. [Read More...](#mqtt-api-architecture)
 
 ## 8. AMQP (Advanced Message Queuing Protocol)
 
-AMQP is a messaging protocol that is commonly used for building robust and scalable communication systems, especially in scenarios where reliable and asynchronous messaging between different components or services is crucial. While not a traditional API architecture style like REST or GraphQL, AMQP is an important communication protocol used within various architectural patterns.[Read More...](/_posts/2023-09-04-overview-amqp-api-architecture.md)
+AMQP is a messaging protocol that is commonly used for building robust and scalable communication systems, especially in scenarios where reliable and asynchronous messaging between different components or services is crucial. While not a traditional API architecture style like REST or GraphQL, AMQP is an important communication protocol used within various architectural patterns.[Read More...](/overview-amqp-api-architecture)
 
 ## GraphQL in API architecture:
 
@@ -226,32 +226,6 @@ Webhooks provide a way for systems to communicate in a decentralized and event-d
 gRPC is often used in various architectural styles, such as microservices, where services need to communicate efficiently and asynchronously. It can also be used in event-driven architectures and scenarios where real-time communication and efficient data exchange are important.
 
 Overall, gRPC is a powerful technology that provides a modern and efficient way to design and implement APIs for distributed systems, making it a popular choice for building high-performance and scalable applications.
-
-## Here's how MQTT works within an API architecture
-
-1. **Publisher**:
-   A device or application acting as a publisher generates data or events and publishes them to specific MQTT topics. Topics serve as channels through which data is distributed.
-
-2. **Broker**:
-   The MQTT broker is a central messaging server that manages the communication between publishers and subscribers. It receives published messages and routes them to the appropriate subscribers based on their topic subscriptions. The broker is responsible for maintaining the message queues and ensuring reliable delivery.
-
-3. **Subscriber**:
-   Subscribers are devices or applications that are interested in receiving messages related to specific topics. They subscribe to topics on the MQTT broker, and the broker forwards published messages to all relevant subscribers.
-
-4. **Message Delivery**:
-   Messages published by a publisher are delivered to all subscribers that have subscribed to the corresponding topic. Subscribers can process the received messages as needed, which might involve updating data, triggering actions, or sending notifications.
-
-Key features of MQTT include:
-
-- **Quality of Service (QoS) Levels**: MQTT offers different levels of message delivery assurance, ranging from "at most once" (fire and forget) to "at least once" (guaranteed delivery) and "exactly once" (guaranteed once-only delivery).
-
-- **Retained Messages**: Publishers can send retained messages to specific topics, ensuring that new subscribers receive the most recent message published on that topic immediately upon subscription.
-
-- **Last Will and Testament (LWT)**: Clients can set a "last will" message that the broker will publish if the client unexpectedly disconnects, helping other clients detect the client's status.
-
-- **Low Overhead**: MQTT is designed to be lightweight, making it suitable for resource-constrained devices and networks with limited bandwidth.
-
-While MQTT itself is not an API architecture style, it can be used in conjunction with other architectural styles, such as microservices or event-driven architecture, to facilitate real-time communication and data exchange between components or devices. It's particularly well-suited for scenarios involving IoT devices, sensors, and applications that require efficient and reliable messaging over constrained networks.
 
 
 [Reference from Postman Report 2023](https://www.postman.com/state-of-api/api-technologies/#api-technologies)
