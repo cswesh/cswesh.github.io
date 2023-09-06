@@ -31,11 +31,11 @@ WebSocket is a protocol that provides full-duplex communication channels over a 
 
 ## 6. gRPC (Remote Procedure Call)
 
-RPC APIs allow programs to execute functions or procedures on a remote server as if they were local. Examples include gRPC and XML-RPC. gRPC, for instance, uses protocol buffers for data serialization and HTTP/2 for transport, making it efficient and suitable for high-performance applications. And JSON-RPC, which uses JSON. [Read more...](#api-architecture-of-grpc)
+RPC APIs allow programs to execute functions or procedures on a remote server as if they were local. Examples include gRPC and XML-RPC. gRPC, for instance, uses protocol buffers for data serialization and HTTP/2 for transport, making it efficient and suitable for high-performance applications. And JSON-RPC, which uses JSON. [Read more...](/api-architecture-of-grpc)
 
 ## 7. MQTT (Message Queing Telemetry Transport)
 
-MQTT (Message Queuing Telemetry Transport) is a lightweight publish-subscribe messaging protocol designed for efficient communication between devices and systems, particularly in scenarios with low bandwidth, high latency, or unreliable networks. While MQTT is not a traditional API architecture style, it is often used as a communication protocol in various IoT (Internet of Things) and real-time messaging architectures. [Read More...](#mqtt-api-architecture)
+MQTT (Message Queuing Telemetry Transport) is a lightweight publish-subscribe messaging protocol designed for efficient communication between devices and systems, particularly in scenarios with low bandwidth, high latency, or unreliable networks. While MQTT is not a traditional API architecture style, it is often used as a communication protocol in various IoT (Internet of Things) and real-time messaging architectures. [Read More...](/mqtt-api-architecture)
 
 ## 8. AMQP (Advanced Message Queuing Protocol)
 
@@ -197,35 +197,6 @@ Webhooks are commonly used for various purposes, including:
 
 Webhooks provide a way for systems to communicate in a decentralized and event-driven manner, allowing for real-time interactions and reducing the need for continuous client polling. However, it's important to consider security, error handling, and reliability when implementing webhooks to ensure that the communication is secure and the system can gracefully handle any issues that may arise during the process.
 
-## API architecture of gRPC:
-
-1. **Remote Procedure Calls**:
-   gRPC enables remote procedure calls (RPC) between different components or services, allowing them to invoke methods and exchange data as if they were local function calls. This simplifies the way applications communicate across network boundaries.
-
-2. **Protocol Buffers**:
-   gRPC uses Protocol Buffers (protobuf) as the default interface definition language to define the service contract and message structures. Protocol Buffers provide a compact, efficient, and language-independent way to serialize structured data.
-
-3. **HTTP/2 Protocol**:
-   gRPC uses HTTP/2 as the underlying transport protocol. This enables features like multiplexing, header compression, and bidirectional streaming, resulting in reduced latency and improved efficiency compared to traditional HTTP/1.x APIs.
-
-4. **Supported Language Bindings**:
-   gRPC provides official language bindings for a wide range of programming languages, including but not limited to C++, Java, Python, Go, Ruby, C#, and JavaScript.
-
-5. **Code Generation**:
-   gRPC generates client and server code from the service definition written in Protocol Buffers. This code generation simplifies the development process by handling many low-level details of communication.
-
-6. **Streaming Support**:
-   gRPC supports both unary RPC (request-response) and streaming RPC, including server streaming (client sends a single request, server responds with a stream) and bidirectional streaming (both client and server exchange streams of messages).
-
-7. **Error Handling and Metadata**:
-   gRPC provides a standardized way to handle errors and attach metadata to requests and responses, making it easier to include additional context and information.
-
-8. **Security and Authentication**:
-   gRPC supports various authentication and security mechanisms, including TLS/SSL encryption and authentication using tokens, certificates, or other methods.
-
-gRPC is often used in various architectural styles, such as microservices, where services need to communicate efficiently and asynchronously. It can also be used in event-driven architectures and scenarios where real-time communication and efficient data exchange are important.
-
-Overall, gRPC is a powerful technology that provides a modern and efficient way to design and implement APIs for distributed systems, making it a popular choice for building high-performance and scalable applications.
 
 
 [Reference from Postman Report 2023](https://www.postman.com/state-of-api/api-technologies/#api-technologies)
