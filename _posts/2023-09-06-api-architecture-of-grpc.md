@@ -2,7 +2,7 @@
 title: gRPC (Remote Procedure Call)
 date: 2023-09-06 12:00:00 +0530
 categories: [technical]
-tags: [API,Architecture,API Architecture, 2023 Top API Architecture, API methodologies, REST, Webhooks, Graphql, SOAP, Websocket, gRPC, MQTT, AMQP, what are API Architectures, API Styles, different types of api architectures, quick revision of apis, Remote Procedure Call, XML-RPC, JSON-RPC interview preperations]
+tags: [API,Architecture,API Architecture, 2023 Top API Architecture, API methodologies, REST, Webhooks, Graphql, SOAP, Websocket, gRPC, MQTT, AMQP, what are API Architectures, API Styles, different types of api architectures, quick revision of apis, Remote Procedure Call, XML-RPC, JSON-RPC, interview preperations]
 published: true
 ---
 
