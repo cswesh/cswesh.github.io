@@ -8,7 +8,7 @@ published: true
 
 ## How the webhook architecture works:
 
-WebSocket is a protocol that provides full-duplex communication channels over a single TCP connection. It allows real-time, bidirectional communication between clients and servers, making it suitable for applications that require constant updates or notifications.
+Webhooks are a design pattern used in API architecture to enable real-time communication and data synchronization between different systems or services. Unlike traditional APIs where a client makes requests to a server to retrieve or send data, with webhooks, the server initiates communication by sending data to a predefined endpoint (URL) on the client's side when a specific event occurs. This allows the client to react and process the data in real-time.
 
 1. **Setting Up a Webhook**:
    The client (receiver) provides a URL endpoint to the server (sender) that will be used to receive webhook notifications. This URL is typically exposed by the client and can be thought of as a callback URL.
