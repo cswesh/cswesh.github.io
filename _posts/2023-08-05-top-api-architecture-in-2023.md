@@ -10,7 +10,7 @@ published: true
 
 ## 1. REST (Representational State Transfer)
 
-REST is a widely used architectural style for designing networked applications. It uses standard HTTP methods (GET, POST, PUT, DELETE) and emphasizes stateless communication. Resources are represented as URLs, and the API uses these URLs to interact with the resources. REST APIs are simple and scalable, making them popular for web applications. [Read more...](#key-principles-and-concepts-of-rest-in-api-architecture)
+REST is a widely used architectural style for designing networked applications. It uses standard HTTP methods (GET, POST, PUT, DELETE) and emphasizes stateless communication. Resources are represented as URLs, and the API uses these URLs to interact with the resources. REST APIs are simple and scalable, making them popular for web applications. [Read more...](/rest-api-architecture)
 
 
 ## 2. Webhooks
