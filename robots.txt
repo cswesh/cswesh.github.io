@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /tags/
+Allow: /
+Sitemap: https://cswesh.github.io/sitemap
